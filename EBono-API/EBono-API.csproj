@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+        <RootNamespace>EBono_API</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.0" NoWarn="NU1605" />
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="5.0.0" NoWarn="NU1605" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Accounts\Controllers" />
+      <Folder Include="Accounts\Domain\Repositories" />
+      <Folder Include="Accounts\Domain\Services\Communication" />
+      <Folder Include="Accounts\Persistence\Repositories" />
+      <Folder Include="Accounts\Resources" />
+      <Folder Include="Accounts\Services" />
+      <Folder Include="Bonds\Controllers" />
+      <Folder Include="Bonds\Domain\Repositories" />
+      <Folder Include="Bonds\Domain\Services\Communication" />
+      <Folder Include="Bonds\Persistence\Repositories" />
+      <Folder Include="Bonds\Resources" />
+      <Folder Include="Bonds\Services" />
+      <Folder Include="Results\Controllers" />
+      <Folder Include="Results\Domain\Repositories" />
+      <Folder Include="Results\Domain\Services\Communication" />
+      <Folder Include="Results\Persistence\Repositories" />
+      <Folder Include="Results\Resources" />
+      <Folder Include="Results\Services" />
+    </ItemGroup>
+
+</Project>

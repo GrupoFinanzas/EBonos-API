@@ -6,18 +6,21 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="AutoMapper" Version="11.0.1" />
+        <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
         <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.0" NoWarn="NU1605" />
         <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="5.0.0" NoWarn="NU1605" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.17" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.17">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="5.0.17" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Relational.Design.Specification.Tests" Version="2.0.3" />
         <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Accounts\Controllers" />
-      <Folder Include="Accounts\Domain\Repositories" />
-      <Folder Include="Accounts\Domain\Services\Communication" />
-      <Folder Include="Accounts\Persistence\Repositories" />
-      <Folder Include="Accounts\Resources" />
-      <Folder Include="Accounts\Services" />
       <Folder Include="Bonds\Controllers" />
       <Folder Include="Bonds\Domain\Repositories" />
       <Folder Include="Bonds\Domain\Services\Communication" />

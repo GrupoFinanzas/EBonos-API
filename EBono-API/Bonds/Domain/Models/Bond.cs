@@ -4,16 +4,16 @@ namespace EBono_API.Bonds.Domain.Models
 {
     public class Bond
     {
-        public int Id;
-        public string BondName;
-        public string CurrencyType;
-        public decimal NominalValue;
-        public float Rate;
-        public string RateType;
-        public float ExpireDate;
-        public string ExpireType;
-        public string CreatedAt;
-
+        public int Id { get; set; }
+        public string BondName { get; set; }
+        public ECurrencyType CurrencyType { get; set; }
+        public decimal NominalValue { get; set; }
+        public float Rate { get; set; }
+        public ERateType RateType { get; set; }
+        public float ExpireDate { get; set; }
+        public EExpirationType ExpirationType { get; set; }
+        public string CreatedAt { get; set; }
+        
         public int AccountId { get; set; }
         public Account Account { get; set; }
     }

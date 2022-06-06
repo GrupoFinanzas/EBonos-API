@@ -6,11 +6,11 @@ namespace EBono_API.Results.Domain.Models
     {
         public int Id;
         public float Tir;
-        public string TirType;
+        public ETirType TirType;
         public decimal BondValue;
         public decimal Van;
         public float Time;
-        public string TimeType;
+        public ETimeType TimeType;
         public float ModDuration;
         public float Convexity;
 

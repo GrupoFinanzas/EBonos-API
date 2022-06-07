@@ -13,7 +13,6 @@ namespace EBono_API.Bonds.Domain.Models
         public float ExpireDate { get; set; }
         public EExpirationType ExpirationType { get; set; }
         public string CreatedAt { get; set; }
-        
         public int AccountId { get; set; }
         public Account Account { get; set; }
     }

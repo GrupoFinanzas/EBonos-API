@@ -2,11 +2,11 @@ using System.ComponentModel;
 
 namespace EBono_API.Bonds.Domain.Models
 {
-    public enum ECurrencyType : byte
+    public enum ECurrencyType : int
     {
         [Description("DOL")]
         Dollar = 1,
-        [Description("SOL")]
+        [Description("PEN")]
         Sol = 2
     }
 }

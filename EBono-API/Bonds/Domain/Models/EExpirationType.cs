@@ -2,7 +2,7 @@ using System.ComponentModel;
 
 namespace EBono_API.Bonds.Domain.Models
 {
-    public enum EExpirationType : byte
+    public enum EExpirationType : int
     {
         [Description("YR")] 
         Years = 1,

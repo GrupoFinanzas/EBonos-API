@@ -21,12 +21,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Bonds\Controllers" />
-      <Folder Include="Bonds\Domain\Repositories" />
-      <Folder Include="Bonds\Domain\Services\Communication" />
-      <Folder Include="Bonds\Persistence\Repositories" />
-      <Folder Include="Bonds\Resources" />
-      <Folder Include="Bonds\Services" />
       <Folder Include="Results\Controllers" />
       <Folder Include="Results\Domain\Repositories" />
       <Folder Include="Results\Domain\Services\Communication" />

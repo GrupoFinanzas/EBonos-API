@@ -6,6 +6,10 @@ using EBono_API.Accounts.Domain.Repositories;
 using EBono_API.Accounts.Domain.Services;
 using EBono_API.Accounts.Persistence.Repositories;
 using EBono_API.Accounts.Services;
+using EBono_API.Bonds.Domain.Repositories;
+using EBono_API.Bonds.Domain.Services;
+using EBono_API.Bonds.Persistence.Repositories;
+using EBono_API.Bonds.Services;
 using EBono_API.Shared.Domain.Repositories;
 using EBono_API.Shared.Persistence.Contexts;
 using EBono_API.Shared.Persistence.Repositories;
@@ -49,6 +53,8 @@ namespace EBono_API
             
             services.AddScoped<IAccountRepository, AccountRepository>();
             services.AddScoped<IAccountService, AccountService>();
+            services.AddScoped<IBondRepository, BondRepository>();
+            services.AddScoped<IBondService, BondService>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
 
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());

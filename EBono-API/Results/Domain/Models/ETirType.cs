@@ -2,7 +2,7 @@ using System.ComponentModel;
 
 namespace EBono_API.Results.Domain.Models
 {
-    public enum ETirType : byte
+    public enum ETirType : int
     {
         [Description("AN")]
         Annual = 1,

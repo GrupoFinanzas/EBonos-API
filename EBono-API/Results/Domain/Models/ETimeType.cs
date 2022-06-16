@@ -2,7 +2,7 @@ using System.ComponentModel;
 
 namespace EBono_API.Results.Domain.Models
 {
-    public enum ETimeType : byte
+    public enum ETimeType : int
     {
         [Description("YR")] 
         Years = 1,

@@ -1,2 +1,12 @@
 
 .idea/.idea.EBono-API/.idea/vcs.xml
+EBono-API/bin/Debug/net5.0/EBono-API.dll
+EBono-API/bin/Debug/net5.0/EBono-API.pdb
+EBono-API/bin/Debug/net5.0/ref/EBono-API.dll
+EBono-API/EBono-API.csproj
+EBono-API/obj/Debug/net5.0/EBono-API.csproj.CoreCompileInputs.cache
+EBono-API/obj/Debug/net5.0/EBono-API.csprojAssemblyReference.cache
+EBono-API/obj/Debug/net5.0/EBono-API.dll
+EBono-API/obj/Debug/net5.0/EBono-API.pdb
+EBono-API/obj/Debug/net5.0/ref/EBono-API.dll
+EBono-API/obj/rider.project.restore.info

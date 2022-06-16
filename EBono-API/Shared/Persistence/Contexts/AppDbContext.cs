@@ -11,10 +11,9 @@ namespace EBono_API.Shared.Persistence.Contexts
     {
         public DbSet<Account> Accounts { get; set; }
         public DbSet<Bond> Bonds { get; set; }
-        //public DbSet<Result> Results { get; set; }
+        public DbSet<Result> Results { get; set; }
         private readonly IConfiguration _configuration;
-
-        // TODO: implementar creacion de entidades, datos y relaciones de las clases
+        
         public AppDbContext(DbContextOptions options, IConfiguration configuration): base(options)
         {
             _configuration = configuration;
@@ -79,7 +78,34 @@ namespace EBono_API.Shared.Persistence.Contexts
 
 
             // Results
+            builder.Entity<Result>().ToTable("Results");
+            builder.Entity<Result>().HasKey(p => p.Id);
+            builder.Entity<Result>().Property(p => p.Id).IsRequired().ValueGeneratedOnAdd();
+            builder.Entity<Result>().Property(p => p.Tir).IsRequired();
+            builder.Entity<Result>().Property(p => p.TirType).IsRequired();
+            builder.Entity<Result>().Property(p => p.BondValue).IsRequired();
+            builder.Entity<Result>().Property(p => p.Van).IsRequired();
+            builder.Entity<Result>().Property(p => p.Time).IsRequired();
+            builder.Entity<Result>().Property(p => p.TimeType).IsRequired();
+            builder.Entity<Result>().Property(p => p.Duration).IsRequired();
+            builder.Entity<Result>().Property(p => p.ModDuration).IsRequired();
+            builder.Entity<Result>().Property(p => p.Convexity).IsRequired();
+            builder.Entity<Result>().Property(p => p.BondId);
 
+            builder.Entity<Result>().HasData(
+                new Result { Id = 1, Tir = 12.2323, TirType = ETirType.Annual, BondValue = 2390, Van = 12, Time = 3, 
+                    TimeType = ETimeType.Months, Duration = 1, ModDuration = 1, Convexity = 1, BondId = 1},
+                new Result { Id = 2, Tir = 12.3425, TirType = ETirType.Annual, BondValue = 2390, Van = 12, Time = 3, 
+                    TimeType = ETimeType.Months, Duration = 1, ModDuration = 1, Convexity = 1, BondId = 1},
+                new Result { Id = 3, Tir = 12.8392, TirType = ETirType.Annual, BondValue = 2390, Van = 12, Time = 3, 
+                    TimeType = ETimeType.Months, Duration = 1, ModDuration = 1, Convexity = 1, BondId = 2},
+                new Result { Id = 4, Tir = 12.2938, TirType = ETirType.Annual, BondValue = 2390, Van = 12, Time = 3, 
+                    TimeType = ETimeType.Months, Duration = 1, ModDuration = 1, Convexity = 1, BondId = 3},
+                new Result { Id = 5, Tir = 12.3812, TirType = ETirType.Annual, BondValue = 2390, Van = 12, Time = 3, 
+                    TimeType = ETimeType.Months, Duration = 1, ModDuration = 1, Convexity = 1, BondId = 3},
+                new Result { Id = 6, Tir = 12.3918, TirType = ETirType.Annual, BondValue = 2390, Van = 12, Time = 3, 
+                    TimeType = ETimeType.Months, Duration = 1, ModDuration = 1, Convexity = 1, BondId = 3}
+            );
 
             builder.UseSnakeCaseNamingConvention();
         }

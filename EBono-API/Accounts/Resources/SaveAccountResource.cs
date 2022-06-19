@@ -16,7 +16,6 @@ namespace EBono_API.Accounts.Resources
         [MaxLength(15)]
         public string Password { get; set; }
         
-        [Required]
         public string CreatedAt { get; set; }
     }
 }

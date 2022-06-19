@@ -1,5 +1,3 @@
-using EBono_API.Accounts.Domain.Models;
-
 namespace EBono_API.Bonds.Resources
 {
     public class BondResource
@@ -13,6 +11,7 @@ namespace EBono_API.Bonds.Resources
         public float ExpireDate { get; set; }
         public string ExpirationType { get; set; }
         public string CreatedAt { get; set; }
-        public Account Account { get; set; }
+        
+        public int AccountId { get; set; }
     }
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jQnb4yisWWBKwuAmGXN/VpqgoRiiVF4HkzLwhv0nNSlIYY3e5W5wo4kbtu7dZ86Fp3iLRYz3pNJ2POldO433RA==",
+  "dgSpecHash": "ZcNt1303lFB+2KI77XIWN+nkV9yF+TzT6iFpLkW/JCi0ydrSI5mh537K7BQoZJMt0dO2TvKAXSRvwXfeAWzsjw==",
   "success": true,
-  "projectFilePath": "D:\\upc_pry\\ciclo09\\finanzas\\EBono-API\\EBono-API\\EBono-API.csproj",
+  "projectFilePath": "D:\\upc_pry\\ciclo09\\finanzas\\EBonos-API\\EBono-API\\EBono-API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\SABINO\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\SABINO\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",

@@ -8,7 +8,6 @@ namespace EBono_API.Bonds.Resources
         [MaxLength(50)]
         public string BondName { get; set; }
         
-        [Required]
         [Range(1, 2)]
         public int CurrencyType { get; set; }
         
@@ -23,6 +22,7 @@ namespace EBono_API.Bonds.Resources
         public int RateType { get; set; }
         
         [Required]
+        [Range(1, 360)]
         public float ExpireDate { get; set; }
         
         [Required]

@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using EBono_API.Results.Domain.Models;
 using EBono_API.Results.Domain.Repositories;
@@ -17,6 +18,14 @@ namespace EBono_API.Results.Persistence.Repositories
         public async Task<IEnumerable<Result>> ListAsync()
         {
             return await _context.Results.ToListAsync();
+        }
+
+        public async Task<Result> FindByBondIdAsync(int bondId)
+        {
+            return await _context.Results
+                .Where(p => p.BondId == bondId)
+                .Include(p => p.Bond)
+                .SingleAsync();
         }
 
         public async Task AddAsync(Result result)

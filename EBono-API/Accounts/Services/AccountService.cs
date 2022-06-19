@@ -58,7 +58,6 @@ namespace EBono_API.Accounts.Services
             existingAccount.Name = account.Name;
             existingAccount.Email = account.Email;
             existingAccount.Password = account.Password;
-            existingAccount.CreatedAt = account.CreatedAt;
 
             try
             {

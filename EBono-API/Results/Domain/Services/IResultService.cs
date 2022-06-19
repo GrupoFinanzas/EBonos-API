@@ -9,6 +9,7 @@ namespace EBono_API.Results.Domain.Services
     {
         Task<IEnumerable<Result>> ListAsync();
         Task<Result> GetByIdAsync(int id);
+        Task<Result> GetByBondIdAsync(int bondId);
         Task<ResultResponse> SaveAsync(Result result);
         Task<ResultResponse> UpdateAsync(int id, Result result);
         Task<ResultResponse> DeleteAsync(int id);

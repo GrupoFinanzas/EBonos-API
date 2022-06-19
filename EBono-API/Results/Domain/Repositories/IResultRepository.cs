@@ -8,6 +8,7 @@ namespace EBono_API.Results.Domain.Repositories
     {
         Task<IEnumerable<Result>> ListAsync();
         Task<Result> FindByIdAsync(int id);
+        Task<Result> FindByBondIdAsync(int bondId);
         Task AddAsync(Result result);
         void Update(Result result);
         void Remove(Result result);

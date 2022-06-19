@@ -6978,11 +6978,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\upc_pry\\ciclo09\\finanzas\\EBono-API\\EBono-API\\EBono-API.csproj",
+      "projectUniqueName": "D:\\upc_pry\\ciclo09\\finanzas\\EBonos-API\\EBono-API\\EBono-API.csproj",
       "projectName": "EBono-API",
-      "projectPath": "D:\\upc_pry\\ciclo09\\finanzas\\EBono-API\\EBono-API\\EBono-API.csproj",
+      "projectPath": "D:\\upc_pry\\ciclo09\\finanzas\\EBonos-API\\EBono-API\\EBono-API.csproj",
       "packagesPath": "C:\\Users\\SABINO\\.nuget\\packages\\",
-      "outputPath": "D:\\upc_pry\\ciclo09\\finanzas\\EBono-API\\EBono-API\\obj\\",
+      "outputPath": "D:\\upc_pry\\ciclo09\\finanzas\\EBonos-API\\EBono-API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\SABINO\\AppData\\Roaming\\NuGet\\NuGet.Config"

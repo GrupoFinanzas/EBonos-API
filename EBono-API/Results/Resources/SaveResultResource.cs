@@ -18,6 +18,7 @@ namespace EBono_API.Results.Resources
         public decimal Van { get; set; }
         
         [Required]
+        [Range(1, 360)]
         public float Time { get; set; }
         
         [Required]

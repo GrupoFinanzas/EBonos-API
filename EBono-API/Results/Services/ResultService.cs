@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using AutoMapper;
+using EBono_API.Bonds.Domain.Repositories;
 using EBono_API.Results.Domain.Models;
 using EBono_API.Results.Domain.Repositories;
 using EBono_API.Results.Domain.Services;
@@ -13,14 +14,16 @@ namespace EBono_API.Results.Services
     public class ResultService : IResultService
     {
         private readonly IResultRepository _resultRepository;
+        private readonly IBondRepository _bondRepository;
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
 
-        public ResultService(IResultRepository resultRepository, IUnitOfWork unitOfWork, IMapper mapper)
+        public ResultService(IResultRepository resultRepository, IUnitOfWork unitOfWork, IMapper mapper, IBondRepository bondRepository)
         {
             _resultRepository = resultRepository;
             _unitOfWork = unitOfWork;
             _mapper = mapper;
+            _bondRepository = bondRepository;
         }
 
         public async Task<IEnumerable<Result>> ListAsync()
@@ -33,6 +36,14 @@ namespace EBono_API.Results.Services
             var result = await _resultRepository.FindByIdAsync(id);
             if (result == null) throw new KeyNotFoundException("Result not found");
             return result;
+        }
+
+        public async Task<Result> GetByBondIdAsync(int bondId)
+        {
+            var existingBond = _bondRepository.FindByIdAsync(bondId);
+            if (existingBond.Result == null) throw new KeyNotFoundException("Invalid Bond Id");
+            
+            return await _resultRepository.FindByBondIdAsync(bondId);
         }
 
         public async Task<ResultResponse> SaveAsync(Result result)

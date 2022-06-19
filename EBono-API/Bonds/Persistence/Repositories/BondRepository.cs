@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using EBono_API.Bonds.Domain.Models;
 using EBono_API.Bonds.Domain.Repositories;
@@ -17,6 +18,14 @@ namespace EBono_API.Bonds.Persistence.Repositories
         public async Task<IEnumerable<Bond>> ListAsync()
         {
             return await _context.Bonds.ToListAsync();
+        }
+
+        public async Task<IEnumerable<Bond>> FinByAccountId(int accountId)
+        {
+            return await _context.Bonds
+                .Where(p => p.AccountId == accountId)
+                .Include(p => p.Account)
+                .ToListAsync();
         }
 
         public async Task AddAsync(Bond bond)

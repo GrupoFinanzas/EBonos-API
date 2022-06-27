@@ -19,6 +19,11 @@ namespace EBono_API.Shared.Persistence.Contexts
             _configuration = configuration;
         }
 
+        protected override void OnConfiguring(DbContextOptionsBuilder builder)
+        {
+            builder.UseSqlServer(_configuration.GetConnectionString("EbonosDB"));
+        }
+
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);

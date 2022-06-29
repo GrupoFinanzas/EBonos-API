@@ -8995,24 +8995,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\SABINO\\.nuget\\packages\\": {}
+    "C:\\Users\\DiegoAlonso\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\upc_pry\\ciclo09\\finanzas\\EBonos-API\\EBono-API\\EBono-API.csproj",
+      "projectUniqueName": "D:\\DiegoAlonso\\myfiles\\dev\\vscode\\universidad\\finanzas-ciclo-6\\EBonos-API\\EBono-API\\EBono-API.csproj",
       "projectName": "EBono-API",
-      "projectPath": "D:\\upc_pry\\ciclo09\\finanzas\\EBonos-API\\EBono-API\\EBono-API.csproj",
-      "packagesPath": "C:\\Users\\SABINO\\.nuget\\packages\\",
-      "outputPath": "D:\\upc_pry\\ciclo09\\finanzas\\EBonos-API\\EBono-API\\obj\\",
+      "projectPath": "D:\\DiegoAlonso\\myfiles\\dev\\vscode\\universidad\\finanzas-ciclo-6\\EBonos-API\\EBono-API\\EBono-API.csproj",
+      "packagesPath": "C:\\Users\\DiegoAlonso\\.nuget\\packages\\",
+      "outputPath": "D:\\DiegoAlonso\\myfiles\\dev\\vscode\\universidad\\finanzas-ciclo-6\\EBonos-API\\EBono-API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\SABINO\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\DiegoAlonso\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -9098,12 +9100,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[5.0.0, 5.0.0]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -9112,7 +9108,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
       }
     }
   }

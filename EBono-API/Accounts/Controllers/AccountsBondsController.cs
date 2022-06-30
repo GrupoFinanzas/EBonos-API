@@ -4,11 +4,13 @@ using AutoMapper;
 using EBono_API.Bonds.Domain.Models;
 using EBono_API.Bonds.Domain.Services;
 using EBono_API.Bonds.Resources;
+using EBono_API.Security.Authorization.Attributes;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EBono_API.Accounts.Controllers
 {
     [Produces("application/json")]
+    [AuthorizeAccount]
     [ApiController]
     [Route("/api/v1/accounts/{accountId}/bonds")]
     public class AccountsBondsController : ControllerBase

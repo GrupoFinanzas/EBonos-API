@@ -253,3 +253,5 @@ D:\DiegoAlonso\myfiles\dev\vscode\universidad\finanzas-ciclo-6\EBonos-API\EBono-
 D:\DiegoAlonso\myfiles\dev\vscode\universidad\finanzas-ciclo-6\EBonos-API\EBono-API\obj\Debug\net5.0\ref\EBono-API.dll
 D:\DiegoAlonso\myfiles\dev\vscode\universidad\finanzas-ciclo-6\EBonos-API\EBono-API\obj\Debug\net5.0\EBono-API.pdb
 D:\DiegoAlonso\myfiles\dev\vscode\universidad\finanzas-ciclo-6\EBonos-API\EBono-API\obj\Debug\net5.0\EBono-API.genruntimeconfig.cache
+D:\upc_pry\ciclo09\finanzas\EBonos-API\EBono-API\bin\Debug\net5.0\BCrypt.Net-Next.dll
+D:\upc_pry\ciclo09\finanzas\EBonos-API\EBono-API\bin\Debug\net5.0\Microsoft.IdentityModel.Abstractions.dll

@@ -34,7 +34,6 @@ namespace EBono_API.Shared.Persistence.Contexts
             builder.Entity<Account>().Property(p => p.Id).IsRequired().ValueGeneratedOnAdd();
             builder.Entity<Account>().Property(p => p.Name).IsRequired().HasMaxLength(30);
             builder.Entity<Account>().Property(p => p.Email).IsRequired().HasMaxLength(30);
-            builder.Entity<Account>().Property(p => p.Password).IsRequired().HasMaxLength(15);
             builder.Entity<Account>().Property(p => p.CreatedAt);
 
             builder.Entity<Account>()

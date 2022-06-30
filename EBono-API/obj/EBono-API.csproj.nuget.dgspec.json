@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\DiegoAlonso\\myfiles\\dev\\vscode\\universidad\\finanzas-ciclo-6\\EBonos-API\\EBono-API\\EBono-API.csproj": {}
+    "D:\\upc_pry\\ciclo09\\finanzas\\EBonos-API\\EBono-API\\EBono-API.csproj": {}
   },
   "projects": {
-    "D:\\DiegoAlonso\\myfiles\\dev\\vscode\\universidad\\finanzas-ciclo-6\\EBonos-API\\EBono-API\\EBono-API.csproj": {
+    "D:\\upc_pry\\ciclo09\\finanzas\\EBonos-API\\EBono-API\\EBono-API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\DiegoAlonso\\myfiles\\dev\\vscode\\universidad\\finanzas-ciclo-6\\EBonos-API\\EBono-API\\EBono-API.csproj",
+        "projectUniqueName": "D:\\upc_pry\\ciclo09\\finanzas\\EBonos-API\\EBono-API\\EBono-API.csproj",
         "projectName": "EBono-API",
-        "projectPath": "D:\\DiegoAlonso\\myfiles\\dev\\vscode\\universidad\\finanzas-ciclo-6\\EBonos-API\\EBono-API\\EBono-API.csproj",
-        "packagesPath": "C:\\Users\\DiegoAlonso\\.nuget\\packages\\",
-        "outputPath": "D:\\DiegoAlonso\\myfiles\\dev\\vscode\\universidad\\finanzas-ciclo-6\\EBonos-API\\EBono-API\\obj\\",
+        "projectPath": "D:\\upc_pry\\ciclo09\\finanzas\\EBonos-API\\EBono-API\\EBono-API.csproj",
+        "packagesPath": "C:\\Users\\SABINO\\.nuget\\packages\\",
+        "outputPath": "D:\\upc_pry\\ciclo09\\finanzas\\EBonos-API\\EBono-API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\DiegoAlonso\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\SABINO\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -47,6 +45,10 @@
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[11.0.0, )"
+            },
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
@@ -95,6 +97,10 @@
             "System.Data.SqlClient": {
               "target": "Package",
               "version": "[4.8.3, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.20.0, )"
             }
           },
           "imports": [
@@ -107,6 +113,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -115,7 +127,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

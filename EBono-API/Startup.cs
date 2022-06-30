@@ -79,6 +79,15 @@ namespace EBono_API
             app.UseMiddleware<ErrorHandlerMiddleware>();
             app.UseMiddleware<JwtMiddleware>();
 
+            app.UseCors(builder => builder
+                .AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader()
+            );
+
+            app.UseMiddleware<ErrorHandlerMiddleware>();
+            app.UseMiddleware<JwtMiddleware>();
+
             app.UseHttpsRedirection();
 
             app.UseRouting();

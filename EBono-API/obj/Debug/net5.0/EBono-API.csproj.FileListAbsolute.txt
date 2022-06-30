@@ -74,7 +74,6 @@ D:\upc_pry\ciclo09\finanzas\EBonos-API\EBono-API\bin\Debug\net5.0\AutoMapper.dll
 D:\upc_pry\ciclo09\finanzas\EBonos-API\EBono-API\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 D:\upc_pry\ciclo09\finanzas\EBonos-API\EBono-API\bin\Debug\net5.0\Humanizer.dll
 D:\upc_pry\ciclo09\finanzas\EBonos-API\EBono-API\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-D:\upc_pry\ciclo09\finanzas\EBonos-API\EBono-API\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
 D:\upc_pry\ciclo09\finanzas\EBonos-API\EBono-API\bin\Debug\net5.0\Microsoft.CodeAnalysis.dll
 D:\upc_pry\ciclo09\finanzas\EBonos-API\EBono-API\bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.dll
 D:\upc_pry\ciclo09\finanzas\EBonos-API\EBono-API\bin\Debug\net5.0\Microsoft.DotNet.PlatformAbstractions.dll

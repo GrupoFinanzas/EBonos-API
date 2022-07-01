@@ -22,7 +22,16 @@ namespace EBono_API.Bonds.Resources
         public int RateType { get; set; }
         
         [Required]
-        [Range(1, 360)]
+        public decimal Cok { get; set; }
+        
+        [Required]
+        public decimal CokFrequency { get; set; }
+        
+        [Required]
+        [Range(1, 8)]
+        public int PaymentPeriods { get; set; }
+        
+        [Required]
         public float ExpireDate { get; set; }
         
         [Required]

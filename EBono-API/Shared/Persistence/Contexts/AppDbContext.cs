@@ -56,29 +56,38 @@ namespace EBono_API.Shared.Persistence.Contexts
             builder.Entity<Bond>().Property(p => p.NominalValue).IsRequired();
             builder.Entity<Bond>().Property(p => p.Rate).IsRequired();
             builder.Entity<Bond>().Property(p => p.RateType).IsRequired();
+            builder.Entity<Bond>().Property(p => p.Cok).IsRequired();
+            builder.Entity<Bond>().Property(p => p.CokFrequency).IsRequired();
+            builder.Entity<Bond>().Property(p => p.PaymentPeriods).IsRequired();
             builder.Entity<Bond>().Property(p => p.ExpireDate).IsRequired();
             builder.Entity<Bond>().Property(p => p.ExpirationType).IsRequired();
             builder.Entity<Bond>().Property(p => p.CreatedAt).IsRequired();
 
             builder.Entity<Bond>().HasData(
                 new Bond { Id = 1, BondName = "Bond FoxHound", CurrencyType = ECurrencyType.Dollar, 
-                    NominalValue = 2300, Rate = 10, RateType = ERateType.Monthly, ExpireDate = 2,
-                    ExpirationType = EExpirationType.Years, CreatedAt = "02/01/2022", AccountId = 1 },
+                    NominalValue = 2300, Rate = 10, RateType = ERateType.Monthly, Cok = 5, CokFrequency = 4,
+                    PaymentPeriods = ERateType.Semiannual, ExpireDate = 2, ExpirationType = EExpirationType.Years, 
+                    CreatedAt = "02/01/2022", AccountId = 1 },
                 new Bond { Id = 2, BondName = "Bond Maverick", CurrencyType = ECurrencyType.Sol, 
-                    NominalValue = 400, Rate = 2, RateType = ERateType.FourMonthly, ExpireDate = 4,
-                    ExpirationType = EExpirationType.Quarters, CreatedAt = "23/02/2022", AccountId = 1 },
+                    NominalValue = 400, Rate = 2, RateType = ERateType.FourMonthly, Cok = 2, CokFrequency = 1,
+                    PaymentPeriods = ERateType.Monthly, ExpireDate = 4, ExpirationType = EExpirationType.Quarters, 
+                    CreatedAt = "23/02/2022", AccountId = 1 },
                 new Bond { Id = 3, BondName = "Bond AnyColor", CurrencyType = ECurrencyType.Dollar, 
-                    NominalValue = 560, Rate = 12, RateType = ERateType.Annual, ExpireDate = 2,
-                    ExpirationType = EExpirationType.Years, CreatedAt = "31/10/2021", AccountId = 2 },
+                    NominalValue = 560, Rate = 12, RateType = ERateType.Annual, Cok = 2, CokFrequency = 3,
+                    PaymentPeriods = ERateType.Daily, ExpireDate = 2, ExpirationType = EExpirationType.Years, 
+                    CreatedAt = "31/10/2021", AccountId = 2 },
                 new Bond { Id = 4, BondName = "Bond Cover Corporation", CurrencyType = ECurrencyType.Dollar, 
-                    NominalValue = 1250, Rate = 5, RateType = ERateType.Fortnightly, ExpireDate = 21,
-                    ExpirationType = EExpirationType.Trimesters, CreatedAt = "08/05/2022", AccountId = 3 },
+                    NominalValue = 1250, Rate = 5, RateType = ERateType.Fortnightly, Cok = 3, CokFrequency = 3,
+                    PaymentPeriods = ERateType.Semiannual, ExpireDate = 21, ExpirationType = EExpirationType.Trimesters, 
+                    CreatedAt = "08/05/2022", AccountId = 3 },
                 new Bond { Id = 5, BondName = "Bond Coffin Company", CurrencyType = ECurrencyType.Sol, 
-                    NominalValue = 3090, Rate = 2, RateType = ERateType.Semiannual, ExpireDate = 10,
-                    ExpirationType = EExpirationType.Months, CreatedAt = "30/12/2022", AccountId = 3 },
+                    NominalValue = 3090, Rate = 2, RateType = ERateType.Semiannual, Cok = 7, CokFrequency = 8,
+                    PaymentPeriods = ERateType.Fortnightly, ExpireDate = 10, ExpirationType = EExpirationType.Months, 
+                    CreatedAt = "30/12/2022", AccountId = 3 },
                 new Bond { Id = 6, BondName = "Bond Wangsheng Funeral Parlor", CurrencyType = ECurrencyType.Sol, 
-                    NominalValue = 470, Rate = 5, RateType = ERateType.Monthly, ExpireDate = 5,
-                    ExpirationType = EExpirationType.Months, CreatedAt = "11/11/2021", AccountId = 3 }
+                    NominalValue = 470, Rate = 5, RateType = ERateType.Monthly, Cok = 2, CokFrequency = 3,
+                    PaymentPeriods = ERateType.Semiannual, ExpireDate = 5, ExpirationType = EExpirationType.Months, 
+                    CreatedAt = "11/11/2021", AccountId = 3 }
             );
 
 

@@ -10,6 +10,9 @@ namespace EBono_API.Bonds.Domain.Models
         public decimal NominalValue { get; set; }
         public float Rate { get; set; }
         public ERateType RateType { get; set; }
+        public decimal Cok { get; set; }
+        public decimal CokFrequency { get; set; }
+        public ERateType PaymentPeriods { get; set; }
         public float ExpireDate { get; set; }
         public EExpirationType ExpirationType { get; set; }
         public string CreatedAt { get; set; }

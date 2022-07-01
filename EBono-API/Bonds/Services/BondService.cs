@@ -77,6 +77,9 @@ namespace EBono_API.Bonds.Services
             existingBond.NominalValue = bond.NominalValue;
             existingBond.Rate = bond.Rate;
             existingBond.RateType = bond.RateType;
+            existingBond.Cok = bond.Cok;
+            existingBond.CokFrequency = bond.CokFrequency;
+            existingBond.PaymentPeriods = bond.PaymentPeriods;
             existingBond.ExpireDate = bond.ExpireDate;
             existingBond.ExpirationType = bond.ExpirationType;
 

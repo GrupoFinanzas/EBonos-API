@@ -82,6 +82,7 @@ namespace EBono_API.Bonds.Services
             existingBond.PaymentPeriods = bond.PaymentPeriods;
             existingBond.ExpireDate = bond.ExpireDate;
             existingBond.ExpirationType = bond.ExpirationType;
+            existingBond.AccountId = bond.AccountId;
 
             try
             {

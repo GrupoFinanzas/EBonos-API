@@ -38,7 +38,6 @@ namespace EBono_API.Bonds.Resources
         [Range(1, 8)]
         public int ExpirationType { get; set; }
         
-        [Required]
         public string CreatedAt { get; set; }
         
         [Required]

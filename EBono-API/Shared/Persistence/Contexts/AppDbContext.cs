@@ -61,7 +61,7 @@ namespace EBono_API.Shared.Persistence.Contexts
             builder.Entity<Bond>().Property(p => p.PaymentPeriods).IsRequired();
             builder.Entity<Bond>().Property(p => p.ExpireDate).IsRequired();
             builder.Entity<Bond>().Property(p => p.ExpirationType).IsRequired();
-            builder.Entity<Bond>().Property(p => p.CreatedAt).IsRequired();
+            builder.Entity<Bond>().Property(p => p.CreatedAt);
 
             builder.Entity<Bond>().HasData(
                 new Bond { Id = 1, BondName = "Bond FoxHound", CurrencyType = ECurrencyType.Dollar, 
